@@ -1,0 +1,13 @@
+AZURE INFRA MIGRATION: PHASE 1
+
+1.  Web Application : consists of frontend,backend,databases
+2. Migration Goals: Cost Optimization, Availability, Scalibility(upscale-downscale, scalein-scaleout)
+3. Approach: Lift and Shift Operation( this method doesn’t require any changes in existing applications)
+4.Infrastructure : Front end- Azure App Service, Application Server- Azure Virtual Machines , Database Server- Azure SQL database, Networking- Azure Virtual Network
+5. Communication between onprem to cloud: VPN connection for secure communication.
+6. Prep: Updating connection and string configurations to align with Azure services.
+7.  Data Migration: ADBMS to migrate on prem data to Azure SQL database.
+8. App Migration: described in 4th point
+9. Testing
+10.  Traffic: we use DNS to reroute the traffic
+11.  Monitoring 
